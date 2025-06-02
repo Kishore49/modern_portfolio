@@ -46,8 +46,8 @@ const Skills = () => {
               className={`glass-card-neo px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 relative
                 ${
                   activeCategory === category.value
-                    ? 'bg-primary-500 text-grey shadow-lg scale-105 ring-4 ring-primary-400/40 dark:ring-primary-300/40'
-                    : 'text-white-700 dark:text-white-500 hover:bg-primary-100 dark:hover:bg-primary-900'
+                    ? 'bg-primary-500 text-white shadow-lg scale-105 ring-4 ring-primary-400/40 dark:ring-primary-300/40'
+                    : 'text-gray-700 dark:text-gray-200 hover:bg-primary-100/80 dark:hover:bg-primary-900/80'
                 }`}
               style={{
                 boxShadow:
@@ -85,12 +85,14 @@ const Skills = () => {
                   className="w-12 h-12 object-contain"
                 />
               </div>
-              <p className="text-center font-medium mt-2 text-primary-700 dark:text-primary-300">{technology.name}</p>
+              <p className="text-center font-medium mt-2 text-primary-700 dark:text-primary-300">
+                {technology.name}
+              </p>
             </motion.div>
           ))}
         </div>
       </div>
-      {/* Custom styles for glassmorphism */}
+
       <style>{`
         .glass-card-neo {
           background: rgba(255,255,255,0.85);

@@ -14,6 +14,8 @@ const tech = {
   numpy: "https://img.icons8.com/?size=100&id=aR9CXyMagKIS&format=png&color=000000",
   pandas: "https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000",
   matplotlib: "https://img.icons8.com/?size=100&id=fOuZeM45qH2X&format=png&color=000000",
+  scikit: "https://thedatascientist.com/wp-content/uploads/2023/05/scikit-learn-1024x551.png",
+  seaborn: "https://avatars.githubusercontent.com/u/22799945?s=280&v=4",
   opencv: "https://img.icons8.com/?size=100&id=apebs8fnmi4m&format=png&color=000000",
   colab: "https://img.icons8.com/?size=100&id=lOqoeP2Zy02f&format=png&color=000000",
   tkinter: "https://img.icons8.com/?size=100&id=KcsCpd9rffIr&format=png&color=000000",

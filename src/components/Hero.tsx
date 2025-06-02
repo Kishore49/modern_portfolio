@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import ThreeCanvas from './ThreeCanvas';
-// Add this import for tilt effect
 import { Tilt } from 'react-tilt';
 
 const Hero = () => {
@@ -24,7 +23,7 @@ const Hero = () => {
         backDelay: 1500,
         loop: true,
         showCursor: true,
-        cursorChar: '\u{2726}', // Unicode character for a solid block cursor
+        cursorChar: '\u{2726}',
       });
     }
 
@@ -101,7 +100,7 @@ const Hero = () => {
               <img
                 draggable="false"
                 className="tilt rounded-full shadow-2xl border-4 border-primary-500 w-80 h-80 object-cover"
-                src="./images/profile.jpeg"
+                src="/profile.jpeg"
                 alt="Kishore Kumar"
               />
             </div>

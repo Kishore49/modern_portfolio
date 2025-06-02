@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { services } from '../constants';
 
-// Add your images here or import them at the top
+// Use direct image URLs instead of local file paths
 const educationImages = [
-  '/images/tvs.jpg', // for Higher Education
-  '/images/psna.png', // for B.Tech in IT
+  'https://media.licdn.com/dms/image/v2/C510BAQFj2OPzUKg7dQ/company-logo_200_200/company-logo_200_200/0/1630627269450?e=2147483647&v=beta&t=kLOfxXlR1ddLJO2lhYbCyc82tOPYLTr_EeS-597KdrM', // Example: TVS Higher Secondary School logo
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzOE9HklqsZYOKt2cA8BAkly_5Cn-2DIK5m2MuYEEqO3__9I4t_ah63qPT3j-K8YunQ0&usqp=CAU', // Example: PSNA College logo
 ];
-
-// Example: Add an 'icon' property to each service in your constants/services.js or services.ts
-// Or, if you want to keep it here, you can map images by index or title
 
 const FlipCard: React.FC<{
   frontTitle: string;

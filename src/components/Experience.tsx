@@ -10,9 +10,9 @@ const ExperienceCard: React.FC<{
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: 'rgba(247,250,255,0.85)',
+        background: 'rgba(109, 154, 231, 0.85)',
         backdropFilter: 'blur(12px)',
-        border: '1.5px solid rgba(120,120,255,0.18)',
+        border: '1.5px solid rgba(70, 70, 189, 0.18)',
         boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 2px 8px 0 rgba(80, 102, 144, 0.12)',
         color: 'inherit',
         borderRadius: '18px',

@@ -177,6 +177,18 @@ export const technologies = [
     category: "tools",
   },
 
+  {
+    name: "Scikit-learn",
+    icon: tech.scikit,
+    category: "frameworks",
+  },
+
+  {
+    name: "Seaborn",
+    icon: tech.seaborn,
+    category: "frameworks",
+  }
+
   
 ];
 
