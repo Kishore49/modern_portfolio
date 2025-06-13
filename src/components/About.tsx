@@ -4,8 +4,8 @@ import { services } from '../constants';
 
 // Use direct image URLs instead of local file paths
 const educationImages = [
-  'https://media.licdn.com/dms/image/v2/C510BAQFj2OPzUKg7dQ/company-logo_200_200/company-logo_200_200/0/1630627269450?e=2147483647&v=beta&t=kLOfxXlR1ddLJO2lhYbCyc82tOPYLTr_EeS-597KdrM', // Example: TVS Higher Secondary School logo
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzOE9HklqsZYOKt2cA8BAkly_5Cn-2DIK5m2MuYEEqO3__9I4t_ah63qPT3j-K8YunQ0&usqp=CAU', // Example: PSNA College logo
+  'https://media.licdn.com/dms/image/v2/C510BAQFj2OPzUKg7dQ/company-logo_200_200/company-logo_200_200/0/1630627269450?e=2147483647&v=beta&t=kLOfxXlR1ddLJO2lhYbCyc82tOPYLTr_EeS-597KdrM', 
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzOE9HklqsZYOKt2cA8BAkly_5Cn-2DIK5m2MuYEEqO3__9I4t_ah63qPT3j-K8YunQ0&usqp=CAU', 
 ];
 
 const FlipCard: React.FC<{
