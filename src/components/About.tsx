@@ -88,7 +88,7 @@ const About = () => {
             </p>
 
             <div className="mt-6 sm:mt-8">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-primary-600 dark:text-primary-300">Education</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-primary-600 dark:text-primary-300">Education (Click to flip)</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
                 <FlipCard
                   frontTitle="Higher Education"
@@ -99,7 +99,7 @@ const About = () => {
                 <FlipCard
                   frontTitle="B.Tech in IT"
                   frontSubtitle="PSNA College of Engineering and Technology"
-                  backDescription="Bachelor's degree in Information Technology from PSNA College of Engineering and Technology with a percentage of 87%. (2020 - 2024)"
+                  backDescription="Bachelor's degree in Information Technology from PSNA College of Engineering and Technology with a percentage of 87. (2020 - 2024)"
                   image={educationImages[1]}
                 />
               </div>
