@@ -102,7 +102,7 @@ const Hero = () => {
               <img
                 draggable="false"
                 className="tilt rounded-full shadow-2xl border-4 border-primary-500 w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-cover relative z-10 hover:border-primary-400 transition-all duration-300"
-                src="/pro.png"
+                src="/pic.jpg"
                 alt="Kishore Kumar"
               />
             </div>
