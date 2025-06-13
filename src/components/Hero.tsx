@@ -68,7 +68,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center lg:justify-start">
               <motion.a
-                href="https://drive.google.com/file/d/14w1rRZOLDy0rpTiOqsN8EARNB1Yux5lq/view?usp=sharing"
+                href="https://drive.google.com/file/d/1wErk3zwbHBI09UBraPDzUc9qXk4n5Dxn/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
