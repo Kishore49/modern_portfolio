@@ -93,13 +93,13 @@ const About = () => {
                 <FlipCard
                   frontTitle="Higher Education"
                   frontSubtitle="TVS Higher Secondary School"
-                  backDescription="Completed SSLC with 92% and HSC 2nd year with 78% at TVS Higher Secondary School, focusing on Science, Mathematics, and Computer Science. (2017 - 2020)"
+                  backDescription="Completed SSLC with 92% and HSC 2nd year with 78% at TVS Higher Secondary School, focusing on Science, Mathematics, and Computer Science (2017 - 2020)."
                   image={educationImages[0]}
                 />
                 <FlipCard
                   frontTitle="B.Tech in IT"
                   frontSubtitle="PSNA College of Engineering and Technology"
-                  backDescription="Bachelor's degree in Information Technology from PSNA College of Engineering and Technology with a percentage of 87. (2020 - 2024)"
+                  backDescription="Bachelor's degree in Information Technology from PSNA College of Engineering and Technology with a percentage of 87 (2020 - 2024)."
                   image={educationImages[1]}
                 />
               </div>
