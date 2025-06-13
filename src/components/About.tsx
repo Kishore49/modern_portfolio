@@ -99,7 +99,7 @@ const About = () => {
                 <FlipCard
                   frontTitle="B.Tech in IT"
                   frontSubtitle="PSNA College of Engineering and Technology"
-                  backDescription="Bachelor's degree in Information Technology from PSNA College of Engineering and Technology with a CGPA of 87%. (2020 - 2024)"
+                  backDescription="Bachelor's degree in Information Technology from PSNA College of Engineering and Technology with a percentage of 87%. (2020 - 2024)"
                   image={educationImages[1]}
                 />
               </div>
