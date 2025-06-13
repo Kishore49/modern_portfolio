@@ -24,7 +24,7 @@ const tech = {
   colab: "https://img.icons8.com/?size=100&id=lOqoeP2Zy02f&format=png&color=000000",
   tkinter: "https://img.icons8.com/?size=100&id=KcsCpd9rffIr&format=png&color=000000",
   streamlit: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN8PZg0ZHwmD_HsRg_nHimaEqMSS7o4nlB6Q&s",
-  msoffice: "https://media.licdn.com/dms/image/sync/v2/D5627AQGztH4jo72ccQ/articleshare-shrink_800/0/1722440267844?e=2147483647&v=beta&t=_Fg1E9gf2UjADndxXXGnsccl9cg75kzNeB8_vxYSySM",
+  msoffice: "https://media.licdn.com/dms/image/sync/v2/D5627AQGztH4jo72ccQ/articleshare-shrink_800/articleshare-shrink_800/0/1722440267844?e=2147483647&v=beta&t=_Fg1E9gf2UjADndxXXGnsccl9cg75kzNeB8_vxYSySM",
   java: "https://img.icons8.com/fluent/512/java-coffee-cup-logo.png",
   aws: "https://icon2.cleanpng.com/20180817/vog/8968d0640f2c4053333ce7334314ef83.webp",
   docker: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png",
