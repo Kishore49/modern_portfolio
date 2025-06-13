@@ -35,50 +35,45 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative w-full h-screen mx-auto flex items-center overflow-hidden bg-gradient-to-br from-[#f7faff] via-[#e3e8f7] to-[#c7d2fe] dark:from-[#181c2b] dark:via-[#232946] dark:to-[#1e293b] transition-colors duration-700">
+    <section id="home" className="relative w-full min-h-screen mx-auto flex items-center overflow-hidden bg-gradient-to-br from-[#f7faff] via-[#e3e8f7] to-[#c7d2fe] dark:from-[#181c2b] dark:via-[#232946] dark:to-[#1e293b] transition-colors duration-700">
       <ThreeCanvas />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-16 w-full flex flex-col md:flex-row items-start justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 py-20 lg:py-0">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="z-10 relative flex-1"
+          className="z-10 relative flex-1 text-center lg:text-left order-2 lg:order-1"
         >
-          <div className="w-full md:w-3/4">
-            <p className="text-lg sm:text-xl font-medium text-gray-700 dark:text-gray-100 mb-4">
+          <div className="w-full">
+            <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 dark:text-gray-100 mb-2 sm:mb-4">
               Hello, I'm
             </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-700 dark:text-primary-200 mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-700 dark:text-primary-200 mb-2 sm:mb-4 leading-tight">
               Kishore Kumar
             </h1>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-primary-500 dark:text-primary-300">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-primary-500 dark:text-primary-300 min-h-[2.5rem] sm:min-h-[3rem] lg:min-h-[4rem]">
               <span ref={typedRef}></span>
             </h2>
-            <p className="text-gray-700 dark:text-gray-100 text-base sm:text-lg max-w-md mb-8">
-              👋 Hey there! I’m someone who wears many digital hats:
-              <br />
-              <span className="inline-block mt-2">
-                <span role="img" aria-label="Data Analyst">📊</span> <b className="text-primary-700 dark:text-primary-200">Data Analyst</b> by curiosity,
-                <br />
-                <span role="img" aria-label="Python">🖥️</span> <b className="text-primary-700 dark:text-primary-200">Python Developer</b> by choice,
-                <br />
-                <span role="img" aria-label="Data Scientist">🔬</span> <b className="text-primary-700 dark:text-primary-200">Data Scientist</b> when patterns whisper,
-                <br />
-                <span role="img" aria-label="Prompt Engineer">💡</span> <b className="text-primary-700 dark:text-primary-200">Prompt Engineer</b> when words spark magic,
-                <br />
-                <span role="img" aria-label="Vibe Coder">🎧</span> <b className="text-primary-700 dark:text-primary-200">Vibe Coder...</b>
-              </span>
-            </p>
+            <div className="text-gray-700 dark:text-gray-100 text-sm sm:text-base lg:text-lg max-w-full lg:max-w-md mb-6 sm:mb-8 leading-relaxed">
+              <p className="mb-3">👋 Hey there! I'm someone who wears many digital hats:</p>
+              <div className="space-y-1 sm:space-y-2">
+                <p><span role="img" aria-label="Data Analyst">📊</span> <b className="text-primary-700 dark:text-primary-200">Data Analyst</b> by curiosity,</p>
+                <p><span role="img" aria-label="Python">🖥️</span> <b className="text-primary-700 dark:text-primary-200">Python Developer</b> by choice,</p>
+                <p><span role="img" aria-label="Data Scientist">🔬</span> <b className="text-primary-700 dark:text-primary-200">Data Scientist</b> when patterns whisper,</p>
+                <p><span role="img" aria-label="Prompt Engineer">💡</span> <b className="text-primary-700 dark:text-primary-200">Prompt Engineer</b> when words spark magic,</p>
+                <p><span role="img" aria-label="Vibe Coder">🎧</span> <b className="text-primary-700 dark:text-primary-200">Vibe Coder...</b></p>
+              </div>
+            </div>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center lg:justify-start">
               <motion.a
                 href="https://drive.google.com/file/d/14w1rRZOLDy0rpTiOqsN8EARNB1Yux5lq/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="btn btn-primary btn-icon"
+                className="btn btn-primary btn-icon w-full sm:w-auto px-6 py-3 text-center"
               >
                 Resume
               </motion.a>
@@ -86,41 +81,48 @@ const Hero = () => {
                 href="#projects"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="btn btn-outline btn-icon"
+                className="btn btn-outline btn-icon w-full sm:w-auto px-6 py-3 text-center"
               >
                 View Projects
               </motion.a>
             </div>
           </div>
         </motion.div>
+
         {/* Profile Image on the right with tilt effect */}
-        <div className="flex-1 flex justify-center items-center mt-10 md:mt-0">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex-1 flex justify-center items-center order-1 lg:order-2 mb-8 lg:mb-0"
+        >
           <Tilt options={{ max: 25, scale: 1.05, speed: 400 }}>
-            <div className="image">
+            <div className="image relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full blur-xl opacity-30 animate-pulse"></div>
               <img
                 draggable="false"
-                className="tilt rounded-full shadow-2xl border-4 border-primary-500 w-80 h-80 object-cover"
+                className="tilt rounded-full shadow-2xl border-4 border-primary-500 w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-cover relative z-10 hover:border-primary-400 transition-all duration-300"
                 src="/profile.jpeg"
                 alt="Kishore Kumar"
               />
             </div>
           </Tilt>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute bottom-8 sm:bottom-10 w-full flex justify-center items-center">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-primary-400 dark:border-primary-600 flex justify-center items-start p-2">
+          <div className="w-[30px] h-[50px] sm:w-[35px] sm:h-[64px] rounded-3xl border-4 border-primary-400 dark:border-primary-600 flex justify-center items-start p-2 hover:border-primary-500 transition-colors duration-300">
             <motion.div
               animate={{
-                y: [0, 24, 0],
+                y: [0, 20, 0],
               }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-primary-500 mb-1"
+              className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-primary-500 mb-1"
             />
           </div>
         </a>

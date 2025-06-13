@@ -38,19 +38,19 @@ const ExperienceCard: React.FC<{
       }
     >
       <div>
-        <h3 className='text-xl font-bold bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-transparent drop-shadow dark:from-primary-300 dark:to-primary-400'>
+        <h3 className='text-lg sm:text-xl font-bold bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-transparent drop-shadow dark:from-primary-300 dark:to-primary-400'>
           {experience.title}
         </h3>
-        <p className='font-semibold text-primary-500 dark:text-primary-300' style={{ margin: 0 }}>
+        <p className='font-semibold text-primary-500 dark:text-primary-300 text-sm sm:text-base' style={{ margin: 0 }}>
           {experience.company_name}
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='mt-4 sm:mt-5 list-disc ml-4 sm:ml-5 space-y-1 sm:space-y-2'>
         {experience.points.map((point, index) => (
           <motion.li
             key={`experience-point-${index}`}
-            className='text-gray-700 dark:text-gray-200 text-sm pl-1 tracking-wider'
+            className='text-gray-700 dark:text-gray-200 text-xs sm:text-sm pl-1 tracking-wider leading-relaxed'
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -70,17 +70,18 @@ const Experience = () => {
       id='experience'
       className='section-padding relative bg-gradient-to-br from-[#f7faff] via-[#e3e8f7] to-[#c7d2fe] dark:from-[#181c2b] dark:via-[#232946] dark:to-[#1e293b] transition-colors duration-700'
     >
-      <div className='max-w-7xl mx-auto px-6 sm:px-16'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-16'>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+          className="text-center lg:text-left"
         >
           <p className='subheading text-primary-500 dark:text-primary-300 tracking-widest font-semibold'>What I've Done So Far</p>
-          <h2 className='heading text-4xl md:text-5xl font-extrabold text-primary-700 dark:text-primary-200 drop-shadow-lg'>Work Experience</h2>
+          <h2 className='heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary-700 dark:text-primary-200 drop-shadow-lg'>Work Experience</h2>
         </motion.div>
 
-        <div className='mt-20 flex flex-col'>
+        <div className='mt-12 sm:mt-20 flex flex-col'>
           <VerticalTimeline lineColor="#a5b4fc">
             {experiences.map((experience, index) => (
               <ExperienceCard
@@ -114,6 +115,20 @@ const Experience = () => {
         }
         .vertical-timeline-element-icon:hover {
           transform: scale(1.12) rotate(8deg);
+        }
+        
+        /* Mobile responsiveness for timeline */
+        @media (max-width: 1169px) {
+          .vertical-timeline-element-content {
+            margin-left: 0 !important;
+          }
+          .vertical-timeline-element-date {
+            display: block !important;
+            float: none !important;
+            color: #a5b4fc !important;
+            margin-top: 1rem !important;
+            font-size: 0.875rem !important;
+          }
         }
       `}</style>
     </section>

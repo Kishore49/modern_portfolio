@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full px-6 sm:px-16 py-5 flex items-center top-0 z-20 ${
+      className={`fixed w-full px-4 sm:px-6 lg:px-16 py-4 sm:py-5 flex items-center top-0 z-20 ${
         scrolled
           ? 'bg-white dark:bg-gray-900 shadow-md backdrop-blur-md bg-opacity-80 dark:bg-opacity-80'
           : 'bg-transparent'
@@ -69,10 +69,10 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <div className='w-9 h-9 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-xl'>
+            <div className='w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-lg sm:text-xl'>
               K
             </div>
-            <p className='text-[18px] font-medium cursor-pointer hidden sm:block text-gray-800 dark:text-gray-100'>
+            <p className='text-base sm:text-[18px] font-medium cursor-pointer hidden sm:block text-gray-800 dark:text-gray-100'>
               Kishore Kumar <span className='text-primary-500 dark:text-primary-300'>| Portfolio</span>
             </p>
           </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className='list-none hidden md:flex flex-row gap-10 relative'
+          className='list-none hidden lg:flex flex-row gap-6 xl:gap-10 relative'
         >
           {navLinks.map((nav) => (
             <li
@@ -94,7 +94,7 @@ const Navbar = () => {
               } hover:text-primary-500 dark:hover:text-primary-400 nav-link cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`} className="relative px-2 py-1">
+              <a href={`#${nav.id}`} className="relative px-2 py-1 text-sm xl:text-base">
                 {nav.title}
                 {/* Animated underline */}
                 <motion.span
@@ -115,7 +115,7 @@ const Navbar = () => {
           ))}
         </motion.ul>
 
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-3 sm:gap-4'>
           <motion.button
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -124,27 +124,27 @@ const Navbar = () => {
             className='p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-primary-500 dark:hover:bg-primary-400 text-gray-800 dark:text-gray-100 transition-colors duration-300'
             aria-label='Toggle dark mode'
           >
-            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+            {darkMode ? <Sun size={18} className="sm:w-5 sm:h-5" /> : <Moon size={18} className="sm:w-5 sm:h-5" />}
           </motion.button>
 
-          <div className='md:hidden flex flex-1 justify-end items-center'>
+          <div className='lg:hidden flex flex-1 justify-end items-center'>
             <div
-              className='w-[28px] h-[28px] cursor-pointer'
+              className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] cursor-pointer'
               onClick={() => setToggle(!toggle)}
             >
-              {toggle ? <X size={28} /> : <Menu size={28} />}
+              {toggle ? <X size={24} className="sm:w-7 sm:h-7" /> : <Menu size={24} className="sm:w-7 sm:h-7" />}
             </div>
 
             <div
               className={`${
                 !toggle ? 'hidden' : 'flex'
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl glass-card`}
+              } p-6 black-gradient absolute top-16 sm:top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl glass-card`}
             >
               <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
                 {navLinks.map((nav) => (
                   <li
                     key={nav.id}
-                    className={`font-medium cursor-pointer text-[16px] ${
+                    className={`font-medium cursor-pointer text-sm sm:text-[16px] ${
                       active === nav.title
                         ? 'text-primary-500'
                         : 'text-gray-700 dark:text-gray-200'
