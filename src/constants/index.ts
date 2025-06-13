@@ -213,7 +213,7 @@ export const projects = [
       },
     ],
     image: projectImages.heartRisk,
-    source_code_link: "https://github.com/Kishore49/heartrisk_assessment_codeclause",
+    source_code_link: "https://heartriskassessmentcodeclause-zzungegg9h4fufc4u4wfuq.streamlit.app/",
   },
   {
     name: "Environment Impact Analyzer",
