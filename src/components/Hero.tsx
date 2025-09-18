@@ -102,7 +102,7 @@ const Hero = () => {
       draggable="false"
       className="rounded-xl shadow-lg border-2 border-primary-500 
                  w-48 sm:w-56 lg:w-64 object-contain"
-      src="/profile_dp.png"  
+      src="/dp.jpg"  
       alt="Kishore Kumar"
     />
   </Tilt>
