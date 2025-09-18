@@ -35,7 +35,7 @@ const MetricFlipCard: React.FC = () => {
       >
         {/* Front */}
         <div className="glass-card-neo p-4 sm:p-6 rounded-2xl w-full h-full flex flex-col justify-center items-center shadow-2xl border-2 border-primary-400/40 backface-hidden">
-          <span className="text-4xl sm:text-5xl font-extrabold text-primary-600 drop-shadow-lg mb-2">15+</span>
+          <span className="text-4xl sm:text-5xl font-extrabold text-primary-600 drop-shadow-lg mb-2">20+</span>
           <span className="text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-200">Projects</span>
           <span className="mt-2 text-xs sm:text-sm text-primary-400">Click to flip</span>
         </div>
