@@ -90,24 +90,25 @@ const Hero = () => {
         </motion.div>
 
         {/* Profile Image on the right with tilt effect */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex-1 flex justify-center items-center order-1 lg:order-2 mb-8 lg:mb-0"
-        >
-          <Tilt options={{ max: 25, scale: 1.05, speed: 400 }}>
-            <div className="image relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full blur-xl opacity-30 animate-pulse"></div>
-              <img
-                draggable="false"
-                className="tilt rounded-full shadow-2xl border-4 border-primary-500 w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-cover relative z-10 hover:border-primary-400 transition-all duration-300"
-                src="/Linkedin DP.jpeg"
-                alt="Kishore Kumar"
-              />
-            </div>
-          </Tilt>
-        </motion.div>
+
+<motion.div 
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+  className="flex-1 flex justify-center items-center order-1 lg:order-2 mb-8 lg:mb-0"
+>
+  <Tilt options={{ max: 15, scale: 1.02, speed: 400 }}>
+    <img
+      draggable="false"
+      className="rounded-xl shadow-lg border-2 border-primary-500 
+                 w-48 sm:w-56 lg:w-64 object-contain"
+      src="/profile_dp.png"  
+      alt="Kishore Kumar"
+    />
+  </Tilt>
+</motion.div>
+
+
       </div>
 
       <div className="absolute bottom-8 sm:bottom-10 w-full flex justify-center items-center">
